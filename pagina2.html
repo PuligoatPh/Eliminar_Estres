@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encuesta sobre el Estrés</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo1.png">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #F9F9F9;
+            padding-top: 56px; /* Espacio para que no se superponga el contenido con el menú */
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo1.png" alt="Logo" style="width:40px;"> Relájate Hoy
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="pagina-2.html">Encuesta</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Encuesta sobre el Estrés</h2>
+        <p>Por favor, completa la siguiente encuesta para ayudarnos a entender mejor cómo el estrés afecta a las personas.</p>
+        
+        <form id="stressSurvey">
+            <div class="form-group">
+                <label for="age">1. ¿Cuál es tu edad?</label>
+                <input type="number" class="form-control" id="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stressLevel">2. ¿Cómo calificarías tu nivel de estrés en una escala del 1 al 10?</label>
+                <input type="number" class="form-control" id="stressLevel" min="1" max="10" required>
+            </div>
+
+            <div class="form-group">
+                <label>3. ¿Cuáles son las principales causas de tu estrés? (Selecciona todas las que apliquen)</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Trabajo" id="causeWork">
+                    <label class="form-check-label" for="causeWork">Trabajo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Familia" id="causeFamily">
+                    <label class="form-check-label" for="causeFamily">Familia</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Salud" id="causeHealth">
+                    <label class="form-check-label" for="causeHealth">Salud</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Finanzas" id="causeFinance">
+                    <label class="form-check-label" for="causeFinance">Finanzas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Otros" id="causeOther">
+                    <label class="form-check-label" for="causeOther">Otros</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="copingStrategies">4. ¿Qué estrategias utilizas para manejar tu estrés? (Selecciona todas las que apliquen)</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Ejercicio" id="strategyExercise">
+                    <label class="form-check-label" for="strategyExercise">Ejercicio</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Meditación" id="strategyMeditation">
+                    <label class="form-check-label" for="strategyMeditation">Meditación</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Hobbies" id="strategyHobbies">
+                    <label class="form-check-label" for="strategyHobbies">Hobbies</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Apoyo Social" id="strategySocialSupport">
+                    <label class="form-check-label" for="strategySocialSupport">Apoyo Social</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Otros" id="strategyOther">
+                    <label class="form-check-label" for="strategyOther">Otros</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar Encuesta</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        <p>©️ 2024 Relájate Hoy. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Manejo del formulario
+        document.getElementById('stressSurvey').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por participar en la encuesta!');
+            // Aquí podrías agregar el código para enviar los datos a un servidor
+        });
+    </script>
+</body>
+</html>

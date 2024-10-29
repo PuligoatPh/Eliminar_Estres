@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formas de Eliminar el Estrés</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo1.png">
+    <!-- Custom Styles -->
+    <style>
+        /* Estilo personalizado para el color de la barra de navegación */
+        .navbar-custom {
+            background-color: #D7D5B3; /* Cambia este color según prefieras */
+        }
+
+        /* Cambiar el color y el estilo del texto del menú a negrita */
+        .navbar-custom .navbar-nav .nav-link {
+            color: black !important;
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        .navbar-brand {
+            color: black !important; /* Cambia el color del texto "Relájate Hoy" a negro */
+        }
+
+        /* Cambiar el color de fondo de la página */
+        body {
+            background-color: #F9F9F9; /* Color de fondo especificado */
+            padding-top: 56px; /* Espacio para que no se superponga el contenido con el menú */
+        }
+
+        .carousel img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .container-objective {
+            margin-top: 50px;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        /* Estilos para la sección de definición del estrés */
+        .stress-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px; /* Margen superior para separar del texto */
+        }
+
+        .stress-text {
+            flex: 1; /* Toma el resto del espacio disponible */
+            margin-right: 20px; /* Espacio entre el texto y la imagen */
+        }
+
+        .stress-image {
+            flex-shrink: 0; /* Evitar que la imagen se reduzca */
+            width: 30%; /* Ancho de la imagen */
+        }
+
+        /* Estilo para la línea de separación */
+        .separator {
+            border-top: 2px solid #D7D5B3;
+            margin: 50px 0; /* Espacio alrededor de la línea */
+        }
+
+        /* Estilo para el texto del profesional */
+        .professional-text {
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo1.png" alt="Logo" style="width:40px;"> Relájate Hoy
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                
+
+                <li class="nav-item"><a class="nav-link" href="#estres">¿Qué es el estrés?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ejercicios">Ejercicios para Eliminar el Estrés</a></li>
+                <li class="nav-item"><a class="nav-link" href="#profesional">Conoce a Nuestra Profesional</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <div id="inicio"></div>
+
+    <!-- Sección Sobre Nosotros -->
+    <div id="sobre-nosotros" class="container container-objective section">
+        <div class="row">
+            <!-- Información sobre objetivo y visión -->
+            <div class="col-md-6">
+                <h2>Nuestro Objetivo</h2>
+                <p>En <strong>Relájate Hoy</strong>, nuestro principal objetivo es proporcionar a las personas herramientas y métodos efectivos para reducir y eliminar el estrés, mejorando así su bienestar mental y emocional.</p>
+                
+                <h2>Nuestra Visión</h2>
+                <p>Nuestra visión es ser un recurso confiable y accesible para todas aquellas personas que buscan mejorar su calidad de vida, ofreciendo información verídica, validada por especialistas en psicología y salud mental.</p>
+
+                <h3>Apoyo de Especialistas</h3>
+                <p>Contamos con el respaldo de la <strong>Dra. Laura Soto</strong>, especialista en psicología, quien ha revisado y validado cada uno de los métodos y técnicas que presentamos. Su experiencia nos permite garantizar que la información que compartimos está basada en la ciencia y la práctica profesional.</p>
+            </div>
+
+            <!-- Carrusel de Imágenes -->
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <!-- Indicadores -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Imágenes del Carrusel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/carrusel_1.jpg" alt="Primera imagen">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/carrusel_2.jpg" alt="Segunda imagen">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/carrusel_3.jpg" alt="Tercera imagen">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/carrusel_4.jpg" alt="Cuarta imagen">
+                        </div>
+                    </div>
+                    <!-- Controles del Carrusel -->
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Línea de Separación -->
+    <div class="separator"></div>
+
+    <!-- Nueva Sección: Definición del Estrés -->
+    <div id="estres" class="container section">
+        <h2>Definición del Estrés</h2>
+        <div class="stress-section">
+            <div class="stress-text">
+                <p>El estrés es una reacción natural del cuerpo ante situaciones desafiantes o amenazantes. Según la Dra. Laura Soto, especialista en psicología, el estrés puede ser positivo (eustrés) cuando nos ayuda a enfrentar desafíos, pero negativo (distrés) cuando se vuelve abrumador y afecta nuestra salud mental y física.</p>
+                
+                <h3>Causas del Estrés</h3>
+                <ul>
+                    <li>Presión laboral o académica.</li>
+                    <li>Problemas familiares o de relaciones.</li>
+                    <li>Falta de tiempo o sobrecarga de responsabilidades.</li>
+                    <li>Situaciones económicas o financieras difíciles.</li>
+                    <li>Problemas de salud o enfermedades.</li>
+                </ul>
+
+                <h3>Consecuencias del Estrés</h3>
+                <ul>
+                    <li>Aumento de la ansiedad y depresión.</li>
+                    <li>Dificultades para concentrarse y tomar decisiones.</li>
+                    <li>Problemas de sueño y fatiga.</li>
+                    <li>Problemas de salud física, como hipertensión.</li>
+                    <li>Impacto negativo en las relaciones interpersonales.</li>
+                </ul>
+            </div>
+
+            <!-- Imagen relacionada con el Estrés -->
+            <a href="https://www.apa.org/" target="_blank" class="stress-image">
+                <img src="images/imagen_1.jpg" alt="Imagen sobre Estrés" style="width: 100%; height: auto;">
+            </a>
+        </div>
+    </div>
+
+    <!-- Línea de Separación -->
+    <div class="separator"></div>
+
+    <!-- Nueva Sección: Ejercicios para Reducir el Estrés -->
+    <div id="ejercicios" class="container section">
+        <h2>Ejercicios para Eliminar el Estrés</h2>
+        <p>La Dra. Laura Soto recomienda los siguientes ejercicios para ayudar a reducir el estrés:</p>
+
+        <h3>1. Respiración Profunda</h3>
+        <p>Siéntate o acuéstate en un lugar cómodo. Cierra los ojos y respira profundamente por la nariz, contando hasta cuatro. Mantén la respiración durante cuatro segundos y exhala lentamente por la boca contando hasta seis. Repite este ejercicio durante cinco minutos.</p>
+
+        <h3>2. Estiramientos de Cuello y Hombros</h3>
+        <p>Siéntate en una silla con la espalda recta. Inclina lentamente la cabeza hacia un lado, sintiendo el estiramiento en el lado opuesto. Mantén la posición durante 15-30 segundos y repite del otro lado. Haz esto tres veces por lado.</p>
+
+        <h3>3. Caminata al Aire Libre</h3>
+        <p>Sal a caminar al menos 30 minutos en un entorno natural. Concéntrate en tu respiración y en los sonidos de la naturaleza. Este ejercicio no solo reduce el estrés, sino que también mejora tu estado de ánimo.</p>
+
+        <h3>4. Yoga Suave</h3>
+        <p>Practica algunas posturas de yoga simples, como la postura del niño o la del perro boca abajo. Mantén cada postura durante 30 segundos a un minuto, concentrándote en tu respiración y en cómo se siente tu cuerpo.</p>
+
+        <!-- Carrusel de Ejercicios -->
+        <div id="carouselEjercicios" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselEjercicios" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselEjercicios" data-slide-to="1"></li>
+                <li data-target="#carouselEjercicios" data-slide-to="2"></li>
+                <li data-target="#carouselEjercicios" data-slide-to="3"></li>
+            </ol>
+            <!-- Imágenes del Carrusel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/ejercicio_1.jpg" alt="Ejercicio de Respiración Profunda">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/ejercicio_2.jpg" alt="Estiramientos de Cuello y Hombros">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/ejercicio_3.jpg" alt="Caminata al Aire Libre">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/ejercicio_4.jpg" alt="Yoga Suave">
+                </div>
+            </div>
+            <!-- Controles del Carrusel -->
+            <a class="carousel-control-prev" href="#carouselEjercicios" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselEjercicios" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Línea de Separación -->
+    <div class="separator"></div>
+
+    <!-- Nueva Sección: Información sobre la Dra. Laura Soto -->
+    <div id="profesional" class="container section professional-text">
+    <h2>Conoce a Nuestra Profesional</h2>
+    <p>La Dra. Laura Soto es psicóloga clínica con más de 10 años de experiencia. Actualmente, tiene su consultorio individual y brinda ayuda en el Hospital Materno Infantil, donde se enfoca en la salud mental de los niños con cáncer.</p>
+    <p>Su enfoque empático y comprensivo ayuda a los pacientes a encontrar estrategias efectivas para enfrentar los desafíos cotidianos.</p>
+    <p>Es miembro de la <strong>Asociación Psicológica Mexicana</strong> y ha participado en conferencias internacionales sobre salud mental, donde comparte su experiencia y conocimientos.</p>
+    
+    <!-- Botón para la encuesta -->
+    <a href="pagina2.html" class="btn btn-primary mt-3">Participa en nuestra encuesta</a>
+</div>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white mt-5 p-4 text-center">
+        <p>©️ 2024 Relájate Hoy. Todos los derechos reservados.</p>
+        <p>Síguenos en: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Twitter</a> | <a href="#" class="text-white">Instagram</a></p>
+        <p>"Tu bienestar es nuestra prioridad."</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
